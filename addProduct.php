@@ -117,7 +117,7 @@
  			</div>
  		</div>
  	</div> -->
- 	<h1>Add Course</h1>
+ 	
  	<div>
 
 <a class="btn btn-danger box" href="#">
