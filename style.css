@@ -1,0 +1,28 @@
+.search{
+    margin-right: 30px;
+}
+.hero_head{
+    text-align: center;
+    font-family: Roboto, serif;
+    font-size: 26px;
+    font-weight: 600;
+}
+.hero_head_btn{
+    background: black;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 20px;
+    margin: 20px;
+    font-weight: 600;
+}
+.hero_head_btn:hover{
+    background: #1c1f23;
+}
+.footer{
+    height: 50px;
+    background: #F8F9FA;
+}
+.footer_para{
+    color: gray;
+}
