@@ -34,7 +34,7 @@
  						</a>
  					</li>
  					<li class="nav-item">
- 						<a class="nav-link" href="#">
+ 						<a class="nav-link" href="adminPanelproducts.php">
  							<i class="fab fa-accessible-icon"></i>
  							Products
  						</a>
@@ -88,7 +88,7 @@
  						<h4 class="card-title">
  							5
  						</h4>
- 						<a class="btn text-white" href="#">View</a>
+ 						<a class="btn text-white" href="adminPanelproducts.php">View</a>
  					</div>
  				</div>
  			</div>
@@ -154,7 +154,7 @@
     </div>
 </div>
 </div>
-<a class="btn btn-danger box" href="#">
+<a class="btn btn-danger box" href="addProduct.php">
 	<i class="fas fa-plus fa-2x"></i>
 </a>
 </div>
