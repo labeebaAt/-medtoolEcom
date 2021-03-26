@@ -132,6 +132,17 @@
     				<th scope="col">Amount</th>
     			</tr>
     		</thread>
+			<?php
+		session_start();
+		$db=mysqli_connect("localhost","root","","softlab");
+		$sql="Select * FROM product";
+		
+		$result=mysqli_query($db,$sql);
+		while ($row=mysqli_fetch_array($result)){
+			
+			
+			
+			?>
     		<tbody>
     			<tr>
     				<th scope="row">22</th>
@@ -150,6 +161,9 @@
                 
 
     		</tbody>
+			<?php	
+		}
+	?>
     	</table>
     </div>
 </div>
