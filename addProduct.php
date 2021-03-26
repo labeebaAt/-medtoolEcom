@@ -127,7 +127,7 @@
 
 <div class="col-sm-6 mt-5 mx-3 jumbotron">
 	<h3 class="text-center">Add new Products</h3>
-	<form action="Dummy"method="POST" enctype="multipart/form-data">
+	<form action="addProductBTS.php"method="POST" enctype="multipart/form-data">
 		<div class="form-group">
 			<label for="product_name">Product Name</label>
 			<input type="text" class="form-control" id="product_name" name="product_name">
