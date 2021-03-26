@@ -121,24 +121,33 @@
 
     <div class="mx-5 mt-5 text-center">
     	<!-- table -->
-    	<p class="bg-dark text-white p-2">Products Ordered</p>
+    	<p class="bg-dark text-white p-2">Products list</p>
     	<table class="table">
     		<thread>
     			<tr>
-    				<th scope="col">Order ID</th>
     				<th scope="col">Product ID</th>
-    				<th scope="col">Customer email</th>
-    				<th scope="col">Order Date</th>
-    				<th scope="col">Amount</th>
+    				<th scope="col">Name</th>
+    				<th scope="col">Description</th>
+    				<th scope="col">Price</th>
     			</tr>
     		</thread>
+			<?php
+		session_start();
+		$db=mysqli_connect("localhost","root","","softlab");
+		$sql="Select * FROM product";
+		
+		$result=mysqli_query($db,$sql);
+		while ($row=mysqli_fetch_array($result)){
+			
+			
+			
+			?>
     		<tbody>
     			<tr>
-    				<th scope="row">22</th>
-    				<th scope="row">100</th>
-    				<th scope="row">kl@gmail.com</th>
-    				<th scope="row">21/10/2021</th>
-    				<th scope="row">2000</th>
+    				<th scope="row"><?php echo $row['id'] ?></th>
+    				<th scope="row"><?php echo $row['name'] ?></th>
+    				<th scope="row"><?php echo $row['s_description'] ?></th>
+    				<th scope="row"><?php echo $row['price'] ?></th>
     				<td>
                       <button type="submit" class="btn btn-info mr-3 name=
     					"view" value="View"><i class="fas fa-pen"></i></button>
@@ -150,6 +159,9 @@
                 
 
     		</tbody>
+			<?php	
+		}
+	?>
     	</table>
     </div>
 </div>
