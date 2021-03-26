@@ -6,16 +6,11 @@ mysqli_select_db($con,'softlab');
 
 $Email=$_POST["email"];
 
-
 $pass=$_POST["psw"];
 
 $fname=$_POST["fname"];
 
 $lname=$_POST["lname"];
-
-
-
-
 
 $s=("select * from users where email='$Email'");
 $result=mysqli_query($con,$s);
