@@ -1,5 +1,18 @@
 
-<!DOCTYPE html>
+<?php
+		session_start();
+		
+		$post_id=$_GET['id'];
+		
+		
+		$db=mysqli_connect("localhost","root","","softlab");
+		
+		$sql="SELECT * FROM product WHERE id=$post_id";
+		$result=mysqli_query($db,$sql);
+		
+		$_SESSION['id']=$post_id;
+
+?>
 <html>
 <head>
 	
@@ -34,7 +47,7 @@
  						</a>
  					</li>
  					<li class="nav-item">
- 						<a class="nav-link" href="#">
+ 						<a class="nav-link" href="adminPanelproducts.php">
  							<i class="fab fa-accessible-icon"></i>
  							Products
  						</a>
@@ -88,7 +101,7 @@
  						<h4 class="card-title">
  							5
  						</h4>
- 						<a class="btn text-white" href="#">View</a>
+ 						<a class="btn text-white" href="adminPanelproducts.php">View</a>
  					</div>
  				</div>
  			</div>
@@ -121,40 +134,51 @@
 
     <div class="mx-5 mt-5 text-center">
     	<!-- table -->
-    	<p class="bg-dark text-white p-2">Products Ordered</p>
+    	<p class="bg-dark text-white p-2">Products list</p>
     	<table class="table">
     		<thread>
     			<tr>
-    				<th scope="col">Order ID</th>
     				<th scope="col">Product ID</th>
-    				<th scope="col">Customer email</th>
-    				<th scope="col">Order Date</th>
-    				<th scope="col">Amount</th>
+    				<th scope="col">Name</th>
+    				<th scope="col">Description</th>
+    				<th scope="col">Price</th>
     			</tr>
     		</thread>
+			<?php
+		
+		$db=mysqli_connect("localhost","root","","softlab");
+		$sql="Select * FROM product";
+		
+		$result=mysqli_query($db,$sql);
+		while ($row=mysqli_fetch_array($result)){
+			
+			
+			
+			?>
     		<tbody>
     			<tr>
-    				<th scope="row">22</th>
-    				<th scope="row">100</th>
-    				<th scope="row">kl@gmail.com</th>
-    				<th scope="row">21/10/2021</th>
-    				<th scope="row">2000</th>
+    				<th scope="row"><?php echo $row['id'] ?></th>
+    				<th scope="row"><?php echo $row['name'] ?></th>
+    				<th scope="row"><?php echo $row['s_description'] ?></th>
+    				<th scope="row"><?php echo $row['price'] ?></th>
     				<td>
                       <button type="submit" class="btn btn-info mr-3 name=
     					"view" value="View"><i class="fas fa-pen"></i></button>
                    
-    					<button type="submit" class="btn btn-secondary name=
-    					"delete" value="Delete"><i class="far fa-trash-alt"></i></button>
+    					<button type="submit" class="btn btn-secondary name="delete" value="Delete" onclick="document.location='delete.php?id=<?php echo $row['id'];?>'"><i class="far fa-trash-alt"></i></button>
     				</td>
     			</tr>
                 
 
     		</tbody>
+			<?php	
+		}
+	?>
     	</table>
     </div>
 </div>
 </div>
-<a class="btn btn-danger box" href="#">
+<a class="btn btn-danger box" href="addProduct.php">
 	<i class="fas fa-plus fa-2x"></i>
 </a>
 </div>
