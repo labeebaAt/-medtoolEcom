@@ -31,7 +31,7 @@ if (isset($_POST['remove'])){
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Cart</title>
 
-    <!-- For Font Awesome -->
+    <!--  Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.css" />
 
     <!-- Bootstrap CDN -->
