@@ -76,7 +76,7 @@ function cartElement($productimg, $productname, $productprice, $productid){
 
 
 
-
+// component.php
 
 
 
