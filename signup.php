@@ -47,12 +47,6 @@
 	
 	<label for="s_id"><b>last name</b></label>
     <input type="text"  name="lname" required><br>
-	
-	
-    
-    <label>
-      <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
-    </label>
 
 
 

@@ -1,5 +1,18 @@
 
-<!DOCTYPE html>
+<?php
+		session_start();
+		
+		$post_id=$_GET['id'];
+		
+		
+		$db=mysqli_connect("localhost","root","","softlab");
+		
+		$sql="SELECT * FROM product WHERE id=$post_id";
+		$result=mysqli_query($db,$sql);
+		
+		$_SESSION['id']=$post_id;
+
+?>
 <html>
 <head>
 	
@@ -132,7 +145,7 @@
     			</tr>
     		</thread>
 			<?php
-		session_start();
+		
 		$db=mysqli_connect("localhost","root","","softlab");
 		$sql="Select * FROM product";
 		
@@ -152,8 +165,7 @@
                       <button type="submit" class="btn btn-info mr-3 name=
     					"view" value="View"><i class="fas fa-pen"></i></button>
                    
-    					<button type="submit" class="btn btn-secondary name=
-    					"delete" value="Delete"><i class="far fa-trash-alt"></i></button>
+    					<button type="submit" class="btn btn-secondary name="delete" value="Delete" onclick="document.location='delete.php?id=<?php echo $row['id'];?>'"><i class="far fa-trash-alt"></i></button>
     				</td>
     			</tr>
                 
