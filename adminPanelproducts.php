@@ -151,7 +151,7 @@
 			    }
 			    else {
 			    	document.getElementById("content").innerHTML = "An error has occured <br>" + myObj.content;
-			    	document.getElementById("content").style.color = "red";
+			    	//document.getElementById("content").style.color = "red";
 			    }
 			    // console.log(myObj);
 			  }
