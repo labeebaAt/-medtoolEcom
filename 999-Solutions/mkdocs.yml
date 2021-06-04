@@ -1,0 +1,6 @@
+site_name: 999 Solutions - Documentation
+nav: 
+  - Home: index.md
+  - About: about.md
+theme: 
+  name: readthedocs
