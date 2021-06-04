@@ -72,7 +72,7 @@ function cartElement($productimg, $productname, $productprice, $productid){
 
 
 
-
+// for component.php
 
 
 
