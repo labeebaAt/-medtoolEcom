@@ -1,28 +1,30 @@
-.search{
-    margin-right: 30px;
+img{
+    max-width: 100%;
+    height: auto;
+    background: lightblue;
+    background: radial-gradient(white 30%, lightblue 70%);
 }
-.hero_head{
+
+.fa-star,
+.fa-star-half{
+    color: yellowgreen;
+    padding: 3% 0;
+}
+
+#cart_count{
     text-align: center;
-    font-family: Roboto, serif;
-    font-size: 26px;
-    font-weight: 600;
+    padding: 0 0.9rem 0.1rem 0.9rem;
+    border-radius: 3rem;
 }
-.hero_head_btn{
-    background: black;
-    color: white;
-    border: none;
-    border-radius: 6px;
-    padding: 20px;
-    margin: 20px;
-    font-weight: 600;
+
+.shopping-cart{
+    padding: 3% 0;
 }
-.hero_head_btn:hover{
-    background: #1c1f23;
+
+.cart-items + .cart-items{
+    padding: 2% 0;
 }
-.footer{
-    height: 50px;
-    background: #F8F9FA;
-}
-.footer_para{
-    color: gray;
+
+.price-details h6{
+    padding: 3% 2%;
 }
