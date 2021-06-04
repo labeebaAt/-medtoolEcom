@@ -28,7 +28,7 @@ class CreateDb
 
       // create connection
         $this->con = mysqli_connect($servername, $username, $password);
-
+//checking connection
         // Check connection
         if (!$this->con){
             die("Connection failed : " . mysqli_connect_error());
