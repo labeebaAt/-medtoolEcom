@@ -1,6 +1,10 @@
 site_name: 999 Solutions - Documentation
 nav: 
   - Home: index.md
+  - Technical Specifications: tech.md
+  - Gallery:
+  - Future Plans : 
   - About: about.md
+
 theme: 
   name: readthedocs
