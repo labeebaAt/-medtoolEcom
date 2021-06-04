@@ -121,31 +121,50 @@
 
     <div class="mx-5 mt-5 text-center">
         <!-- table -->
-        <p class="bg-dark text-white p-2">List of Products Added</p>
+        <p class="bg-dark text-white p-2">List of Products Added Name</p>
         <table class="table">
             <thread>
                 <tr>
-                    <th scope="col">Order ID</th>
-                    <th scope="col">Product ID</th>
-                    <th scope="col">Customer email</th>
-                    <th scope="col">Order Date</th>
-                    <th scope="col">Amount</th>
+                    <th scope="col">Name</th>
+                    
                 </tr>
             </thread>
             <tbody>
                 <tr>
-                    <th scope="row">22</th>
-                    <th scope="row">100</th>
-                    <th scope="row">kl@gmail.com</th>
-                    <th scope="row">21/10/2021</th>
-                    <th scope="row">2000</th>
-                    <td>
-                      <button type="submit" class="btn btn-info mr-3 name=
-                        "view" value="View"><i class="fas fa-pen"></i></button>
-                   
-                        <button type="submit" class="btn btn-secondary name=
-                        "delete" value="Delete"><i class="far fa-trash-alt"></i></button>
-                    </td>
+                    
+                    <th scope="row">	<p id="content"></p>
+	<button>Load content</button>
+
+	<script type="text/javascript">
+		function loadFromServer() {
+			var xmlhttp = new XMLHttpRequest();
+			xmlhttp.onreadystatechange = function() {
+			  if (this.readyState == 4 && this.status == 200) {
+			    var myObj = JSON.parse(this.responseText);
+			    document.getElementById("content").style.color = "black";
+			    document.getElementById("content").innerHTML = "";
+			    if (myObj.status === "OK")
+			    {
+			    	for (let i = 0; i < myObj.content.length; i++)
+			    		document.getElementById("content").innerHTML += myObj.content[i].name  + "<br>";	
+			    	//document.getElementById("content").innerHTML += "The number of records = " + myObj.content.length;
+			    }
+			    else {
+			    	document.getElementById("content").innerHTML = "An error has occured <br>" + myObj.content;
+			    	document.getElementById("content").style.color = "red";
+			    }
+			    // console.log(myObj);
+			  }
+			};
+			xmlhttp.open("GET", "backend_db.php", true);
+			xmlhttp.send();
+		}
+
+		document.querySelector('button').addEventListener('click', loadFromServer);
+		
+	</script></th>
+                    
+                    
                 </tr>
                 
 
