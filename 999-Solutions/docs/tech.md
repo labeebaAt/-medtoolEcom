@@ -1,26 +1,16 @@
-#About - 999 Solution
-<figure>
-  <img src="http://uiu.ac.bd/wp-content/uploads/2015/12/header-logo.png" width="400" />
-  <figcaption></figcaption>
-</figure>  
-<br>Welcome, This is the Official Document of the Project 999 Solutions Developed for the Course: CSI-322 Software Engineering Laboratory conducted by Md. Saidul Hoque Anik Sir of the [United International University](http://www.uiu.ac.bd/).
+#Technical Specifications - 999 Solution
 
+##Language Used
 
-##Course Information
-Course Title : Software Engineering Laboratory
-<br>Course Code : CSI-322
-<br>Credit Hours : 1
-<figure>
-  <img src="http://cse.uiu.ac.bd/wp-content/uploads/sites/2/2021/04/Saidul.jpg" width="200" />
-  <figcaption></figcaption>
-</figure>  
-<br> **Md. Saidul Hoque Anik**, 
-<br> **Lecturer, UIU**
+* PHP | [Wiki](https://en.wikipedia.org/wiki/PHP) | PHP is used in the project's backend sector.
+* HTML | [Wiki](https://en.wikipedia.org/wiki/HTML) | alongside PHP HTML is also used in the project's backend sector.
+* CSS | [Wiki](https://en.wikipedia.org/wiki/CSS) | CSS is used in the Visuals of the Project.
+* Python | [Wiki](https://en.wikipedia.org/wiki/Python) | Python is mainly used in the Black Box Testing of the Project.
+* Json | [Wiki](https://en.wikipedia.org/wiki/JSON) | Json Format is used as to store and transport data.
+* Mysql | [Wiki](https://en.wikipedia.org/wiki/MySQL) | The Database of the Project is develop in MySQL.
 
-##Team Members : 
-#####011143123 - Shihab Alam Abir
-#####011161227 - Md. Shahed Hasan
-#####011162069 - Labeeba Atiqui
-#####011163125 - A. B. M. Naveed Hossain
-#####011163003 - Shabrul Islam
-#####011172099 – Sanjida Nur 
+##Applications Used
+* Firefox/Chrome | [Firefox Link](https://www.mozilla.org/en-US/firefox/new/) |  | [Chrome Link](https://www.google.com/chrome/) | Browser are the main application used to access the project visually
+* Sublime Text | [Link](https://www.sublimetext.com/) | Multi Language Support Compiler used to program code logic
+* Mkdocs | [Link](https://www.mkdocs.org/) | Used in Official Documentation of the Project
+

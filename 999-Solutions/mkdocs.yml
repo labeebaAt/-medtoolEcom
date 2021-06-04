@@ -3,7 +3,7 @@ nav:
   - Home: index.md
   - Technical Specifications: tech.md
   - Gallery: gallery.md
-  - Future Plans : future.md
+ # - Future Plans : future.md
   - About Us: about.md
 
 theme: 
