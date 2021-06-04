@@ -1,8 +1,6 @@
-<?php
-error_reporting(0);
-
-$link = mysqli_connect("localhost", "root", "", "softlab");
-$status = 'OK';
-$content = [];
+if (mysqli_connect_errno()) {
+	$status = 'ERROR';
+	$content = mysqli_connect_error();
+}
 
 
