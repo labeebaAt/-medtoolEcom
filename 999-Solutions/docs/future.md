@@ -9,7 +9,7 @@
 ##Course Information
 Course Title : Software Engineering Laboratory
 <br>Course Code : CSI-322
-<br>Credit Hours : 1
+<br>Credit Hours : 1.0
 <figure>
   <img src="http://cse.uiu.ac.bd/wp-content/uploads/sites/2/2021/04/Saidul.jpg" width="200" />
   <figcaption></figcaption>
